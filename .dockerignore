@@ -1,0 +1,13 @@
+dist
+.git
+**/build
+**/dist
+**/out
+node_modules
+**/.DS_Store
+Dockerfile
+.editorconfig
+*.md
+!.gitignore
+!**/.env
+!.npmrc

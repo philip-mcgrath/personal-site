@@ -10,4 +10,5 @@ module.exports = withBundleAnalyzer({
     experimental: {
         optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
     },
+    output: "standalone"
 });
