@@ -1,5 +1,6 @@
 import { Title, Text } from '@mantine/core';
 import classes from './Header.module.css';
+import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
 export default function Header() {
     return (
@@ -10,6 +11,7 @@ export default function Header() {
                 </Text>
             </Title>
             <Title order={1} ta="center">Full Stack Web Engineer</Title>
+            <ColorSchemeToggle />
         </>
     );
 }
