@@ -6,7 +6,7 @@ import { ChangeEvent, useState } from 'react';
 
 export function ColorSchemeToggle() {
   const { setColorScheme } = useMantineColorScheme();
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(false);
 
   const setToggle = (event: ChangeEvent<HTMLInputElement>) => {
     setChecked(event.currentTarget.checked);
