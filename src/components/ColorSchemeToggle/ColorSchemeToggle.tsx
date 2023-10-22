@@ -11,7 +11,7 @@ export function ColorSchemeToggle() {
   return (
     <Group justify="center" mt="xl">
       {checked ? <IconMoon /> : <IconSun />}
-      <Switch checked={checked} onChange={(event) => setColorScheme(checked ? 'dark' : 'light')} />
+      <Switch checked={checked} onChange={(event) => setColorScheme(event.currentTarget.checked ? 'dark' : 'light')} />
     </Group>
   );
 }
