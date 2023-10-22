@@ -6,15 +6,12 @@ import { useState } from 'react';
 
 export function ColorSchemeToggle() {
   const { setColorScheme } = useMantineColorScheme();
-  const [checked, setChecked] = useState(false);
-
-  const newColorScheme = checked ? 'dark' : 'light';
-  setColorScheme(newColorScheme);
+  const [checked] = useState(true);
 
   return (
     <Group justify="center" mt="xl">
       {checked ? <IconMoon /> : <IconSun />}
-      <Switch checked={checked} onChange={(event) => setChecked(event.currentTarget.checked)} />
+      <Switch checked={checked} onChange={(event) => setColorScheme(checked ? 'dark' : 'light')} />
     </Group>
   );
 }
